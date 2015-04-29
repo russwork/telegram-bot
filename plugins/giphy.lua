@@ -55,12 +55,12 @@ local function run(msg, matches)
   end
 
   if not gif_url then 
-    return "Error: GIF not found"
+    return "Error"
   end
 
   local receiver = get_receiver(msg)
   print("GIF URL"..gif_url)
-  local text = 'Preparing to make you laugh'
+  local text = ''
   local cb_extra = {
     gif_url = gif_url,
     receiver = receiver
